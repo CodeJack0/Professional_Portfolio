@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Resume Variants — John Isaac A. Echaluce" />
+  <title>Resume Variants — John Isaac A. Echaluce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    .resumes-page {
+      min-height: 100vh;
+      padding: calc(72px + 4rem) 0 4rem;
+    }
+    .resumes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .resume-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow var(--transition), border-color var(--transition), transform 0.2s ease;
+      text-align: center;
+    }
+    .resume-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-accent);
+      transform: translateY(-4px);
+    }
+    .resume-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1.5rem;
+      background: var(--color-highlight);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-accent);
+    }
+    .resume-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+    .resume-title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+      color: var(--color-text);
+    }
+    .resume-tagline {
+      font-size: 0.9375rem;
+      color: var(--color-accent);
+      font-weight: 600;
+      margin: 0 0 1rem;
+    }
+    .resume-desc {
+      font-size: 0.9375rem;
+      color: var(--color-text-muted);
+      margin: 0 0 1.5rem;
+      line-height: 1.6;
+    }
+    .resume-btn {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.875rem 1.75rem;
+      font-family: inherit;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      border-radius: 999px;
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      color: var(--color-accent);
+      cursor: pointer;
+      transition: background var(--transition), transform 0.2s ease, box-shadow var(--transition);
+      text-decoration: none;
+    }
+    .resume-btn:hover {
+      background: var(--color-highlight);
+      border-color: var(--color-accent);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 900px) {
+      .resumes-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo">Portfolio</a>
+    </nav>
+  </header>
+
+  <main class="resumes-page">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="section-label">Resume Variants</span>
+        <h2 class="section-title">Choose Your Resume</h2>
+        <p class="section-desc">Select a specialized resume version tailored to your target role.</p>
+      </header>
+
+      <div class="resumes-grid">
+        <article class="resume-card">
+          <div class="resume-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3 class="resume-title">General Resume</h3>
+          <p class="resume-tagline">Full Overview</p>
+          <p class="resume-desc">Complete resume showcasing all skills, projects, and experience across development and IT support.</p>
+          <a href="resume.html" class="resume-btn">View Resume</a>
+        </article>
+
+        <article class="resume-card">
+          <div class="resume-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3 class="resume-title">Development</h3>
+          <p class="resume-tagline">Mobile & Web Development</p>
+          <p class="resume-desc">Focused on web and mobile development technologies, frameworks, and backend services.</p>
+          <a href="resume_development.html" class="resume-btn">View Resume</a>
+        </article>
+
+        <article class="resume-card">
+          <div class="resume-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="resume-title">Networking</h3>
+          <p class="resume-tagline">IT Support & Networking</p>
+          <p class="resume-desc">Specialized in Linux systems, networking, hardware troubleshooting, and IT support operations.</p>
+          <a href="resume_networking.html" class="resume-btn">View Resume</a>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> John Isaac A. Echaluce. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
