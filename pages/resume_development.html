@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Resume / CV — John Isaac A. Echaluce, IT Graduate" />
-  <title>Resume / CV — John Isaac A. Echaluce</title>
+  <title>Resume</title>
   <link rel="stylesheet" href="../css/resume.css" />
 </head>
 <body class="resume-page">
   <div class="resume-toolbar no-print">
     <a href="resumes.html" class="toolbar-link">← Back to Resume Options</a>
-    <button type="button" class="toolbar-btn" onclick="window.print()">Print / Save PDF</button>
+    <button type="button" class="toolbar-btn" onclick="printResume()">Print / Save PDF</button>
+    <p class="print-hint no-print">Tip: In print settings, turn off <strong>Headers and footers</strong> for a clean PDF.</p>
   </div>
 
   <article class="resume-document" aria-label="Resume">
@@ -120,5 +121,6 @@
       </section>
     </main>
   </article>
+  <script src="../js/resume-print.js"></script>
 </body>
 </html>
