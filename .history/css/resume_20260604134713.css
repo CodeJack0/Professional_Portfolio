@@ -329,7 +329,7 @@ body.resume-page {
 /* —— Print: no browser header/footer; same inset as screen —— */
 @media print {
   @page {
-    size: letter;
+    size: A4;
     margin: 0;
   }
 
